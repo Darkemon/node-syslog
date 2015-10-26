@@ -8,7 +8,7 @@ This is a node module (add-on) to work with syslog (system log) daemon on unix s
 
 Read the [setMask wiki page](https://github.com/schamane/node-syslog/wiki/setMask) for using the `setMask` functionality.
 
-The current version is compatible to node 4.0.x and higher.
+The current version is compatible to node 4.x and higher.
 
 Node-syslog does not officially support Darwin OS and MS Windows but should work fine.
 
