@@ -5,6 +5,6 @@ Syslog.log(Syslog.LOG_INFO, "news info log test", function() {
   console.log("syslog callback");
 });
 Syslog.log(Syslog.LOG_ERR, "news log error test");
-Syslog.log(Syslog.LOG_DEBUG, "Last log message as debug: " + new Date());
+Syslog.logSync(Syslog.LOG_DEBUG, "Last log message as debug: " + new Date());
 Syslog.close();
 

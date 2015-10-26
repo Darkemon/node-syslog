@@ -1,3 +1,7 @@
+## 2.0.0
+
+* rewrite to support node.js >= 4.0.0
+
 ## 1.2.0
 
 * bump version for new npm package compatible to nodejs v0.12
