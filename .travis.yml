@@ -14,5 +14,5 @@ node_js:
 install:
   - export CXX=g++-4.8
   - $CXX --version
-  - npm install
+  - npm install -g node-gyp
   - node-gyp configure build
