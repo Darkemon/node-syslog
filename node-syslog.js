@@ -1,4 +1,6 @@
-var SyslogWrapper = require('./build/Release/syslog');
+(function(){
+
+var SyslogWrapper = require('./build/Release/syslog').Syslog;
 
 /*
  * export Syslog as module
@@ -7,6 +9,7 @@ module.exports = {
 
 init: SyslogWrapper.init,
 log: SyslogWrapper.log,
+logSync: SyslogWrapper.logSync,
 setMask: SyslogWrapper.setMask,
 close: SyslogWrapper.close,
 version: '1.2.0',
@@ -40,7 +43,6 @@ LOG_CONS		: 0x02,
 LOG_ODELAY		: 0x04,
 LOG_NDELAY		: 0x08,
 LOG_NOWAIT		: 0x10,
-LOG_PERROR		: 0x20,
 /*
  * priorities
  */
@@ -56,9 +58,10 @@ LOG_DEBUG		: 7
 
 /*
  * Attach destroy handling
- *
- * XXX(sam) consider using AtExit: joyent/node#e4a8d261
  */
 process.on('exit', function() {
 	SyslogWrapper.close();
 });
+
+
+})();
