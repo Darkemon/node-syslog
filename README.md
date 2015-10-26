@@ -1,4 +1,4 @@
- [![Build Status](https://travis-ci.org/schamane/node-syslog.png)](https://travis-ci.org/schamane/node-syslog)
+ [![Build Status](https://travis-ci.org/Darkemon/node-syslog.svg?branch=master)](https://travis-ci.org/Darkemon/node-syslog.svg?branch=master)
 
 # Node-Syslog
 
